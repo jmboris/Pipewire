@@ -23,7 +23,7 @@ configure_args="
  $(vopt_feature ffado libffado)
  $(vopt_feature selinux selinux)
 "
-hostmakedepends=" doxygen pkg-config python3-docutils gettext glib-devel libebur128 libebur128-devel"
+hostmakedepends=" doxygen pkg-config python3-docutils gettext glib-devel libebur128-devel"
 makedepends="$(vopt_if sdl2 SDL2-devel) gst-plugins-base1-devel jack-devel
  sbc-devel v4l-utils-devel libva-devel libbluetooth-devel ncurses-devel
  libfreeaptx-devel libusb-devel fdk-aac-devel libsndfile-devel
@@ -33,7 +33,7 @@ makedepends="$(vopt_if sdl2 SDL2-devel) gst-plugins-base1-devel jack-devel
  $(vopt_if selinux libselinux-devel) libcamera-devel libcap-devel"
 depends="libspa-alsa>=${version}_${revision} libspa-audioconvert>=${version}_${revision}
  libspa-audiomixer>=${version}_${revision} libspa-control>=${version}_${revision}
- libspa-v4l2>=${version}_${revision} pulseaudio-utils virtual?pipewire-session-manager libebur128"
+ libspa-v4l2>=${version}_${revision} pulseaudio-utils virtual?pipewire-session-manager"
 checkdepends="pulseaudio-utils"
 short_desc="Server and user space API to deal with multimedia pipelines"
 maintainer="cinerea0 <cinerea0@protonmail.com>"
